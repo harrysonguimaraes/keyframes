@@ -1,0 +1,55 @@
+body{
+	margin-top: 100px;
+	background-color: #f8f8f8;
+}
+
+span {
+	color: inherit;
+	margin-left: 27px;
+	margin-top: 23px;
+	font-size: 30px;
+}
+
+@keyframes bounceIn {
+
+  30% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  100% {
+    -webkit-transform: scale(50);
+    transform: scale(50);
+  }
+}
+
+@-webkit-keyframes bounceIn {
+
+  30% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  100% {
+    -webkit-transform: scale(50);
+    transform: scale(50);
+  }
+}
+
+.quadrado {
+
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+}
+
+.efeito {
+	-webkit-animation-name: bounceIn;
+  	animation-duration: bounceIn 2s;
+  	
+  	animation-name: bounceIn;
+  	-webkit-animation-duration: 2s;
+  	
+  	-webkit-animation-fill-mode: forwards;
+  	animation-fill-mode: forwards;
+}
